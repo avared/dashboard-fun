@@ -28,3 +28,6 @@ Rails.application.config.assets.precompile += %w( dataTables.uikit.min.css )
 Rails.application.config.assets.precompile += %w( jquery.dataTables.min.css )
 Rails.application.config.assets.precompile += %w( jquery.dataTables_themeroller.css )
 Rails.application.config.assets.precompile += %w( dashboard.css )
+
+Rails.application.config.assets.precompile += %w( bootstrap.js )
+Rails.application.config.assets.precompile += %w( metisMenu.js )

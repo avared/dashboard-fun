@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @prospect.last_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @prospect.first_name %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @prospect.target %>
+</p>
+
+<p>
+  <strong>Chance:</strong>
+  <%= @prospect.chance %>
+</p>
+
+<%= link_to 'Edit', edit_prospect_path(@prospect) %> |
+<%= link_to 'Back', prospects_path %>

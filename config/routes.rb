@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :prospects
   root 'dashboard#index' 
   resources :users
 

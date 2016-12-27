@@ -1,0 +1,4 @@
+class Prospect < ApplicationRecord
+    
+    
+end

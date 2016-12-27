@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_name: MyString
+  first_name: MyString
+  target: 1
+  chance: 1.5
+
+two:
+  last_name: MyString
+  first_name: MyString
+  target: 1
+  chance: 1.5

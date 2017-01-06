@@ -19,7 +19,7 @@
                 <table width="100%" class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline" id="dataTables-example" role="grid" aria-describedby="dataTables-example_info" style="width: 100%;">
   <thead>
     <tr role="row">
-      <th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Last Name of Prospect" style="width: 110px;" aria-sort="ascending">Last name</th>
+      <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Last Name of Prospect" style="width: 110px;" aria-sort="ascending">Last name</th>
       <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 110px;">First name</th>
       <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 100px;">Target</th>
       <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 100px;">Chance</th>
@@ -33,9 +33,9 @@
       <tr>
         <td><%= prospect.last_name %></td>
         <td><%= prospect.first_name %></td>
-        <td><%= prospect.target %></td>
-        <td><%= prospect.chance %></td>
-        <td><%= prospect.chance * prospect.target %></td>
+        <td><%= number_to_currency(prospect.target, precision: 0) %></td>
+        <td><%= number_to_percentage(prospect.chance*100, precision: 0) %></td>
+        <td><%= number_to_currency(prospect.chance * prospect.target, precision: 0) %></td>
         <td><%= link_to 'Show', prospect %></td>
         <td><%= link_to 'Edit', edit_prospect_path(prospect) %></td>
         <td><%= link_to 'Destroy', prospect, method: :delete, data: { confirm: 'Are you sure?' } %></td>
